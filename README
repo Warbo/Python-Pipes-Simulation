@@ -1,0 +1,27 @@
+This is a simple simulation in Python of a network of pipes containing gas, with plungers
+to push it around.
+
+Requires: Python, PyGame
+
+The code is rather simple, split into the following classes:
+
+Tile
+
+A Tile is a square on the screen. It can either be "solid" (ie. a wall or a plunger) or not,
+ie. an empty space. Tiles form the heart of the computation. Tiles should normally be created
+automatically by Levels.
+
+Level
+
+A Level is a collection of Tiles, where each one knows of its neighbours. The best way to make
+a Level is to use the static make_level factory method. It takes a string where 0 is empty and
+# is a wall.
+
+Plunger
+
+A Plunger is a solid block which sits on a Tile, blocking gas from passing. Plungers can be
+moved, for example this can be tied to keyboard input.
+
+PassivePlunger
+
+A PassivePlunger is a solid block which sits on a Tile and moves along pressure gradients.
