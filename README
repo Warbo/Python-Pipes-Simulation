@@ -25,3 +25,7 @@ moved, for example this can be tied to keyboard input.
 PassivePlunger
 
 A PassivePlunger is a solid block which sits on a Tile and moves along pressure gradients.
+
+To use, click on black squares to add gas to the system. Use the arrow keys to move the top
+left plunger (yellow block) around, compressing and expanding the gas, and moving the other
+plungers in turn.
